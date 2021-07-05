@@ -173,7 +173,7 @@ export class Use {
       const scramble = await library.convertText(original, language);
       const knownLanguage = await this.checkKnowledge(game.user.character, language);
       const hasEnoughMythos = await this.checkKnowledge(game.user.character, 'mythos');
-      if (game.user.isGM || language == game.i18n.localize('LIBRARY.LANGUAGES.Cthulhian') && hasEnoughMythos || knownLanguage) {
+      if (game.user.isGM || language == 'cthulhian' && hasEnoughMythos || knownLanguage) {
         span.title = `${await library.localizeLanguage(language)}: ${scramble}`;
       } else {
         span.textContent = scramble;

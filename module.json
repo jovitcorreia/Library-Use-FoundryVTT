@@ -3,7 +3,7 @@
     "title": "Library Use",
     "description": "Scrambles texts to languages of our world on chat and journal entries on the Call of Cthulhu system.",
     "author": "Castanho",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "minimumCoreVersion": "0.8.8",
     "compatibleCoreVersion": "0.8.8",
     "esmodules": [
@@ -23,7 +23,6 @@
             "name": "Português (Brasil)",
             "path": "languages/pt-BR.json"
         }
-
     ],
     "system": "CoC7",
     "url": "https://github.com/castanhocorreia/Library-Use-FoundryVTT",
