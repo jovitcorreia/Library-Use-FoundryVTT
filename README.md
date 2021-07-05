@@ -33,7 +33,7 @@ This module is not intended (and could not) be a Google Translate. All text conv
 ## Installation.
 Please note: this module is currently only available for the Call of Cthulhu system.
 
-In the setup screen, use the following manifest to install the module: ``.
+In the setup screen, use the following manifest to install the module: `https://github.com/castanhocorreia/Library-Use-FoundryVTT/releases/latest/download/module.json`.
 
 ## Credits.
 - To all developers of [Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot). Without their efforts this module would not have existed.
