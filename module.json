@@ -1,0 +1,32 @@
+{
+    "name": "library-use",
+    "title": "Library Use",
+    "description": "Scrambles texts to languages of our world on chat and journal entries on the Call of Cthulhu system.",
+    "author": "Castanho",
+    "version": "0.0.1",
+    "minimumCoreVersion": "0.8.8",
+    "compatibleCoreVersion": "0.8.8.",
+    "esmodules": [
+        "./library-use.js"
+    ],
+    "styles": [
+        "./styles/sheet.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        },
+        {
+            "lang": "pt-BR",
+            "name": "Português (Brasil)",
+            "path": "languages/pt-BR.json"
+        }
+
+    ],
+    "system": "CoC7",
+    "dependencies": [],
+    "manifest": "",
+    "download": ""
+}

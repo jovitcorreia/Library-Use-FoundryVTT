@@ -1,0 +1,30 @@
+{
+    "LIBRARY.STANDARD.TranslatedFrom": "Translated from",
+    "LIBRARY.STANDARD.SeeOriginal": "(See Original)",
+    "LIBRARY.STANDARD.OriginalTextIn": "Original Text in",
+    "LIBRARY.STANDARD.SeeTranslation": "(See Translation)",
+    "LIBRARY.STANDARD.UnknownLanguage": "You don't know the language of these sayings.",
+
+    "LIBRARY.LANGUAGES.Arabic": "Arabic",
+    "LIBRARY.LANGUAGES.Chinese": "Chinese",
+    "LIBRARY.LANGUAGES.Cthulhian": "Cthulhian",
+    "LIBRARY.LANGUAGES.French": "French",
+    "LIBRARY.LANGUAGES.English": "English",
+    "LIBRARY.LANGUAGES.German": "German",
+    "LIBRARY.LANGUAGES.Greek": "Greek",
+    "LIBRARY.LANGUAGES.Hindi": "Hindi",
+    "LIBRARY.LANGUAGES.Italian": "Italian",
+    "LIBRARY.LANGUAGES.Latin": "Latin",
+    "LIBRARY.LANGUAGES.Portuguese": "Portuguese",
+    "LIBRARY.LANGUAGES.Russian": "Russian",
+    "LIBRARY.LANGUAGES.Serbian": "Serbian",
+    "LIBRARY.LANGUAGES.Spanish": "Spanish",
+    "LIBRARY.LANGUAGES.Turkish": "Turkish",
+
+    "LIBRARY.SETTINGS.cthulhianShowMode": "Cthulhian Show Mode",
+    "LIBRARY.SETTINGS.cthulhianShowModeHint": "Sets the way in which Cthulhian texts will be displayed in chat and journal entries: runes or text.",
+    "LIBRARY.SETTINGS.cthulhianShowModeRunes": "Runes",
+    "LIBRARY.SETTINGS.cthulhianShowModeText": "Text",
+    "LIBRARY.SETTINGS.mythosValueToCthulhian": "Value of Mythos for Cthulhian",
+    "LIBRARY.SETTINGS.mythosValueToCthulhianHint": "Sets the minimum value of Cthulhu Mythos a character must have to understand texts in Cthulhian."
+}
