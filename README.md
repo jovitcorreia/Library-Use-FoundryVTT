@@ -11,12 +11,12 @@ This module is not intended (and could not) be a Google Translate. All text conv
 - Those who do not know the language will see the text with the words replaced randomly, in the aesthetics of the target language.
 - The Keeper can send messages and create paragraphs on journal entries in any of the Supported Languages.
 - Both the player who has a character who knows the language and the Keeper can at any time take a look at the scrambled version of the original text, either in the chat (by clicking on the label) or in the journal entry (by hovering over the paragraph);
-- There is a secret language in this module: Cthulhian. Texts written in this language can only be read by characters who have a Cthulhu Mythos skill value greater than or equal to the value defined in the module settings. It can be shown in the form of text or runes (also defined in settings).
+- There is a secret language in this module: Aklo (Cthulhian). Texts written in this language can only be read by characters who have a Cthulhu Mythos skill value greater than or equal to the value defined in the module settings. It can be shown in the form of text or runes (also defined in settings).
 
 ### Supported Languages.
+- Aklo;
 - Arabic;
 - Chinese;
-- Cthulhian;
 - English;
 - French;
 - German;

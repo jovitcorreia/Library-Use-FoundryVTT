@@ -5,9 +5,9 @@
     "LIBRARY.STANDARD.SeeTranslation": "(Ver Tradução)",
     "LIBRARY.STANDARD.UnknownLanguage": "Você não conhece o idioma destes dizeres.",
 
+    "LIBRARY.LANGUAGES.Aklo": "Aklo",
     "LIBRARY.LANGUAGES.Arabic": "Árabe",
     "LIBRARY.LANGUAGES.Chinese": "Chinês",
-    "LIBRARY.LANGUAGES.Cthulhian": "Cthulhian",
     "LIBRARY.LANGUAGES.French": "Francês",
     "LIBRARY.LANGUAGES.English": "Inglês",
     "LIBRARY.LANGUAGES.German": "Alemão",
@@ -21,10 +21,10 @@
     "LIBRARY.LANGUAGES.Spanish": "Espanhol",
     "LIBRARY.LANGUAGES.Turkish": "Turco",
 
-    "LIBRARY.SETTINGS.cthulhianShowMode": "Modo de Exibição de Cthulhian",
-    "LIBRARY.SETTINGS.cthulhianShowModeHint": "Define o modo qual textos em Cthulhian serão exibidos no chat e em registros do diário: runas ou texto.",
-    "LIBRARY.SETTINGS.cthulhianShowModeRunes": "Runas",
-    "LIBRARY.SETTINGS.cthulhianShowModeText": "Texto",
-    "LIBRARY.SETTINGS.mythosValueToCthulhian": "Valor de Mythos para Cthulhian",
-    "LIBRARY.SETTINGS.mythosValueToCthulhianHint": "Define o valor mínimo de Mythos de Cthulhu que um personagem precisa ter para entender textos em Cthulhian."
+    "LIBRARY.SETTINGS.akloShowMode": "Modo de Exibição de Aklo",
+    "LIBRARY.SETTINGS.akloShowModeHint": "Define o modo qual textos em Aklo serão exibidos no chat e em registros do diário: runas ou texto.",
+    "LIBRARY.SETTINGS.akloShowModeRunes": "Runas",
+    "LIBRARY.SETTINGS.akloShowModeText": "Texto",
+    "LIBRARY.SETTINGS.mythosValueToAklo": "Valor de Mythos para Aklo",
+    "LIBRARY.SETTINGS.mythosValueToAkloHint": "Define o valor mínimo de Mythos de Cthulhu que um personagem precisa ter para entender textos em Aklo."
 }

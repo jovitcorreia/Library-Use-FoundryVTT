@@ -96,7 +96,7 @@ export class Use {
       if (game.user.id == user.id) {
         const knownLanguage = await this.checkKnowledge(user.character, language);
         const hasEnoughMythos = await this.checkKnowledge(user.character, 'mythos');
-        if (language == game.i18n.localize('LIBRARY.LANGUAGES.Cthulhian') && hasEnoughMythos || knownLanguage) {
+        if (language == game.i18n.localize('LIBRARY.LANGUAGES.Aklo') && hasEnoughMythos || knownLanguage) {
           return this.createTranslatableMessage(content, label, original, language);
         } else return this.generateScrambleMessage(content, label, scramble, language);
       }
@@ -108,7 +108,7 @@ export class Use {
       if ($(content).contents().get(i).nodeName == 'BR') $(content).contents().get(i).remove();
       if ($(content).contents().get(i).nodeName == '#text') $(content).contents().get(i).nodeValue = '';
     }
-    if (language == game.i18n.localize('LIBRARY.LANGUAGES.Cthulhian')) $(content).css({'font-family': ''});
+    if (language == game.i18n.localize('LIBRARY.LANGUAGES.Aklo')) $(content).css({'font-family': ''});
     $(content).contents().get(0).nodeValue = original;
     $(label).removeClass('scramble');
     $(label).find('#source').empty().append(game.i18n.localize('LIBRARY.STANDARD.TranslatedFrom'));
@@ -118,13 +118,13 @@ export class Use {
   async switchTranslationMode(content, label, original, scramble, language) {
     const knownLanguage = await this.checkKnowledge(game.user.character, language);
     const hasEnoughMythos = await this.checkKnowledge(game.user.character, 'mythos');
-    if (game.user.isGM || language == game.i18n.localize('LIBRARY.LANGUAGES.Cthulhian') && hasEnoughMythos || knownLanguage) {
+    if (game.user.isGM || language == game.i18n.localize('LIBRARY.LANGUAGES.Aklo') && hasEnoughMythos || knownLanguage) {
       $(label).on('click', (event) => {
         event.preventDefault();
         const text = $(content).contents().get(0).nodeValue.trim();
         if (text == original) {
-          if (language == game.i18n.localize('LIBRARY.LANGUAGES.Cthulhian') && game.settings.get('library-use', 'cthulhianShowMode') == 'runes') {
-            $(content).css({'font-family': 'cthulhian'});
+          if (language == game.i18n.localize('LIBRARY.LANGUAGES.Aklo') && game.settings.get('library-use', 'akloShowMode') == 'runes') {
+            $(content).css({'font-family': 'aklo'});
           }
           $(content).contents().get(0).nodeValue = scramble;
           $(label).addClass('scramble');
@@ -139,8 +139,8 @@ export class Use {
       if ($(content).contents().get(i).nodeName == 'BR') $(content).contents().get(i).remove();
       if ($(content).contents().get(i).nodeName == '#text') $(content).contents().get(i).nodeValue = '';
     }
-    if (language == game.i18n.localize('LIBRARY.LANGUAGES.Cthulhian') && game.settings.get('library-use', 'cthulhianShowMode') == 'runes') {
-      $(content).css({'font-family': 'cthulhian'});
+    if (language == game.i18n.localize('LIBRARY.LANGUAGES.Aklo') && game.settings.get('library-use', 'akloShowMode') == 'runes') {
+      $(content).css({'font-family': 'aklo'});
     }
     $(content).contents().get(0).nodeValue = scramble;
     $(label).addClass('scramble');
@@ -153,7 +153,7 @@ export class Use {
     let hasKnowledge = false;
     if (knowledge == 'mythos') {
       const cthulhuMythosSkill = character.getSkillsByName(game.i18n.localize('CoC7.CthulhuMythosName'));
-      if (cthulhuMythosSkill.length !== 0 && cthulhuMythosSkill[0].value >= game.settings.get('library-use', 'mythosValueToCthulhian')) {
+      if (cthulhuMythosSkill.length !== 0 && cthulhuMythosSkill[0].value >= game.settings.get('library-use', 'mythosValueToAklo')) {
         hasKnowledge = true;
       }
     } else {
@@ -173,13 +173,13 @@ export class Use {
       const scramble = await library.convertText(original, language);
       const knownLanguage = await this.checkKnowledge(game.user.character, language);
       const hasEnoughMythos = await this.checkKnowledge(game.user.character, 'mythos');
-      if (game.user.isGM || language == 'cthulhian' && hasEnoughMythos || knownLanguage) {
+      if (game.user.isGM || language == 'aklo' && hasEnoughMythos || knownLanguage) {
         span.title = `${await library.localizeLanguage(language)}: ${scramble}`;
       } else {
         span.textContent = scramble;
         span.title = game.i18n.localize('LIBRARY.STANDARD.UnknownLanguage');
-        if (language == 'cthulhian' && game.settings.get('library-use', 'cthulhianShowMode') == 'runes') {
-          $(span).css({'font-family': 'cthulhian'});
+        if (language == 'aklo' && game.settings.get('library-use', 'akloShowMode') == 'runes') {
+          $(span).css({'font-family': 'aklo'});
         }
       }
     }

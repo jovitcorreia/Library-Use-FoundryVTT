@@ -5,22 +5,22 @@ export const library = new Library();
 export const use = new Use();
 
 function registerSettings() {
-  game.settings.register('library-use', 'cthulhianShowMode', {
-    name: game.i18n.localize('LIBRARY.SETTINGS.cthulhianShowMode'),
-    hint: game.i18n.localize('LIBRARY.SETTINGS.cthulhianShowModeHint'),
+  game.settings.register('library-use', 'akloShowMode', {
+    name: game.i18n.localize('LIBRARY.SETTINGS.akloShowMode'),
+    hint: game.i18n.localize('LIBRARY.SETTINGS.akloShowModeHint'),
     scope: 'world',
     config: true,
     type: String,
     choices: {
-      'runes': game.i18n.localize('LIBRARY.SETTINGS.cthulhianShowModeRunes'),
-      'text': game.i18n.localize('LIBRARY.SETTINGS.cthulhianShowModeText'),
+      'runes': game.i18n.localize('LIBRARY.SETTINGS.akloShowModeRunes'),
+      'text': game.i18n.localize('LIBRARY.SETTINGS.akloShowModeText'),
     },
     default: 'runes',
     onChange: () => location.reload(),
   });
-  game.settings.register('library-use', 'mythosValueToCthulhian', {
-    name: game.i18n.localize('LIBRARY.SETTINGS.mythosValueToCthulhian'),
-    hint: game.i18n.localize('LIBRARY.SETTINGS.mythosValueToCthulhianHint'),
+  game.settings.register('library-use', 'mythosValueToAklo', {
+    name: game.i18n.localize('LIBRARY.SETTINGS.mythosValueToAklo'),
+    hint: game.i18n.localize('LIBRARY.SETTINGS.mythosValueToAkloHint'),
     scope: 'world',
     config: true,
     type: Number,

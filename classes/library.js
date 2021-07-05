@@ -1,6 +1,6 @@
+import aklo from '../dictionaries/aklo.js';
 import arabic from '../dictionaries/arabic.js';
 import chinese from '../dictionaries/chinese.js';
-import cthulhian from '../dictionaries/cthulhian.js';
 import english from '../dictionaries/english.js';
 import french from '../dictionaries/french.js';
 import german from '../dictionaries/german.js';
@@ -17,9 +17,9 @@ import turkish from '../dictionaries/turkish.js';
 export class Library {
   get supportedLanguages() {
     return {
+      'aklo': game.i18n.localize('LIBRARY.LANGUAGES.Aklo'),
       'arabic': game.i18n.localize('LIBRARY.LANGUAGES.Arabic'),
       'chinese': game.i18n.localize('LIBRARY.LANGUAGES.Chinese'),
-      'cthulhian': game.i18n.localize('LIBRARY.LANGUAGES.Cthulhian'),
       'english': game.i18n.localize('LIBRARY.LANGUAGES.English'),
       'french': game.i18n.localize('LIBRARY.LANGUAGES.French'),
       'german': game.i18n.localize('LIBRARY.LANGUAGES.German'),
@@ -94,7 +94,7 @@ export class Library {
         dictionary = turkish;
         break;
       default:
-        dictionary = cthulhian;
+        dictionary = aklo;
     }
     const sanitization = text.replace(/<[^>]*>/g, ' ').split(' ');
     let phrase = [];
