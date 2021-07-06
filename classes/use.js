@@ -153,14 +153,14 @@ export class Use {
     let hasKnowledge = false;
     if (knowledge == 'mythos') {
       const cthulhuMythosSkill = character.getSkillsByName(game.i18n.localize('CoC7.CthulhuMythosName'));
-      if (cthulhuMythosSkill.length !== 0 && cthulhuMythosSkill[0].value >= game.settings.get('library-use', 'mythosValueToAklo')) {
+      if (cthulhuMythosSkill.length !== 0 && cthulhuMythosSkill[0].value >= game.settings.get('library-use', 'mythosValueForAklo')) {
         hasKnowledge = true;
       }
     } else {
-      const standard = await library.standardizeLanguage(knowledge);
-      Object.entries(character.data.flags['library-use'].languages).forEach(([index, language]) => {
-        if (standard == language) hasKnowledge = true;
-      });
+      const languageSkill = character.getSkillsByName(knowledge);
+      if (languageSkill.length !== 0) {
+        if (languageSkill[0].value >= game.settings.get('library-use', 'skillValueForLanguages')) hasKnowledge = true;
+      }
     }
     return hasKnowledge;
   }
@@ -171,12 +171,12 @@ export class Use {
       const original = span.textContent;
       const language = span.dataset.language;
       const scramble = await library.convertText(original, language);
-      const knownLanguage = await this.checkKnowledge(game.user.character, language);
+      const knownLanguage = await this.checkKnowledge(game.user.character, await library.localizeLanguage(language));
       const hasEnoughMythos = await this.checkKnowledge(game.user.character, 'mythos');
       if (game.user.isGM || language == 'aklo' && hasEnoughMythos || knownLanguage) {
-        span.title = `${await library.localizeLanguage(language)}: ${scramble}`;
+        span.title = `${await library.localizeLanguage(language)}: ${scramble}.`;
       } else {
-        span.textContent = scramble;
+        span.textContent = `${scramble}.`;
         span.title = game.i18n.localize('LIBRARY.STANDARD.UnknownLanguage');
         if (language == 'aklo' && game.settings.get('library-use', 'akloShowMode') == 'runes') {
           $(span).css({'font-family': 'aklo'});
@@ -219,7 +219,7 @@ export class Use {
       });
     }
     document[method] = function(target, options, content) {
-      if (options == undefined) return;
+      if (!options) options = {};
       options.style_formats = [...CONFIG.TinyMCE.style_formats, {
         title: 'Language',
         items: languages,

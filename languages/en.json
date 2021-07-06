@@ -25,6 +25,8 @@
     "LIBRARY.SETTINGS.akloShowModeHint": "Sets the way in which Aklo texts will be displayed in chat and journal entries: runes or text.",
     "LIBRARY.SETTINGS.akloShowModeRunes": "Runes",
     "LIBRARY.SETTINGS.akloShowModeText": "Text",
-    "LIBRARY.SETTINGS.mythosValueToAklo": "Value of Mythos for Aklo",
-    "LIBRARY.SETTINGS.mythosValueToAkloHint": "Sets the minimum value of Cthulhu Mythos a character must have to understand texts in Aklo."
+    "LIBRARY.SETTINGS.skillValueForLanguages": "Value of Skill for Languages",
+    "LIBRARY.SETTINGS.skillValueForLanguagesHint": "Sets the minimum percentage in a Language skill to be able to understand a text.",
+    "LIBRARY.SETTINGS.mythosValueForAklo": "Value of Mythos for Aklo",
+    "LIBRARY.SETTINGS.mythosValueForAkloHint": "Sets the minimum value of Cthulhu Mythos a character must have to understand texts in Aklo."
 }

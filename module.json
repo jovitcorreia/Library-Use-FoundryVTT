@@ -19,14 +19,14 @@
             "path": "languages/en.json"
         },
         {
+          "lang": "es",
+          "name": "Español",
+          "path": "languages/es.json"
+        },
+        {
             "lang": "pt-BR",
             "name": "Português (Brasil)",
             "path": "languages/pt-BR.json"
-        },
-        {
-            "lang": "es",
-            "name": "Español",
-            "path": "languages/es.json"
         }
     ],
     "system": "CoC7",

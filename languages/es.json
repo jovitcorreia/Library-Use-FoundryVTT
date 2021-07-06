@@ -22,9 +22,9 @@
     "LIBRARY.LANGUAGES.Turkish": "Turco",
 
     "LIBRARY.SETTINGS.akloShowMode": "Modo demostración Aklo",
-    "LIBRARY.SETTINGS.akloShowModeHint": "Configura cómo se muestran textos en Aklo tnato en el chat como en el diario",
+    "LIBRARY.SETTINGS.akloShowModeHint": "Configura cómo se muestran textos en Aklo tanto en el chat como en el diario",
     "LIBRARY.SETTINGS.akloShowModeRunes": "Runas",
     "LIBRARY.SETTINGS.akloShowModeText": "Texto",
-    "LIBRARY.SETTINGS.mythosValueToAklo": "Valor de Mitos para el Aklo",
-    "LIBRARY.SETTINGS.mythosValueToAkloHint": "Configura el valor mínimo en Mitos de Cthulhu que debe tener un personaje para comprender textos escritos en Aklo"
+    "LIBRARY.SETTINGS.mythosValueForAklo": "Valor de Mitos para el Aklo",
+    "LIBRARY.SETTINGS.mythosValueForAkloHint": "Configura el valor mínimo en Mitos de Cthulhu que debe tener un personaje para comprender textos escritos en Aklo"
 }

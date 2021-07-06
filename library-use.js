@@ -18,9 +18,23 @@ function registerSettings() {
     default: 'runes',
     onChange: () => location.reload(),
   });
-  game.settings.register('library-use', 'mythosValueToAklo', {
-    name: game.i18n.localize('LIBRARY.SETTINGS.mythosValueToAklo'),
-    hint: game.i18n.localize('LIBRARY.SETTINGS.mythosValueToAkloHint'),
+  game.settings.register('library-use', 'skillValueForLanguages', {
+    name: game.i18n.localize('LIBRARY.SETTINGS.skillValueForLanguages'),
+    hint: game.i18n.localize('LIBRARY.SETTINGS.skillValueForLanguagesHint'),
+    scope: 'world',
+    config: true,
+    type: Number,
+    range: {
+      min: 0,
+      max: 99,
+      step: 1,
+    },
+    default: 50,
+    onChange: () => location.reload(),
+  });
+  game.settings.register('library-use', 'mythosValueForAklo', {
+    name: game.i18n.localize('LIBRARY.SETTINGS.mythosValueForAklo'),
+    hint: game.i18n.localize('LIBRARY.SETTINGS.mythosValueForAkloHint'),
     scope: 'world',
     config: true,
     type: Number,

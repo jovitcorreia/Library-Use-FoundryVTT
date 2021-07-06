@@ -25,6 +25,8 @@
     "LIBRARY.SETTINGS.akloShowModeHint": "Define o modo qual textos em Aklo serão exibidos no chat e em registros do diário: runas ou texto.",
     "LIBRARY.SETTINGS.akloShowModeRunes": "Runas",
     "LIBRARY.SETTINGS.akloShowModeText": "Texto",
-    "LIBRARY.SETTINGS.mythosValueToAklo": "Valor de Mythos para Aklo",
-    "LIBRARY.SETTINGS.mythosValueToAkloHint": "Define o valor mínimo de Mythos de Cthulhu que um personagem precisa ter para entender textos em Aklo."
+    "LIBRARY.SETTINGS.skillValueForLanguages": "Valor de Perícia para Línguas",
+    "LIBRARY.SETTINGS.skillValueForLanguagesHint": "Define a porcentagem mínima numa perícia de Língua para entender textos.",
+    "LIBRARY.SETTINGS.mythosValueForAklo": "Valor de Mythos para Aklo",
+    "LIBRARY.SETTINGS.mythosValueForAkloHint": "Define o valor mínimo de Mythos de Cthulhu para entender textos em Aklo."
 }
