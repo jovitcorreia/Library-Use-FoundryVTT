@@ -1,4 +1,7 @@
 {
+    "I18N.LANGUAGE": "Español",
+    "I18N.MAINTAINERS": "@Viriato139ac#0342",
+	
     "LIBRARY.STANDARD.TranslatedFrom": "Traducido del",
     "LIBRARY.STANDARD.SeeOriginal": "(Ver original)",
     "LIBRARY.STANDARD.OriginalTextIn": "Texto original en",
@@ -25,6 +28,8 @@
     "LIBRARY.SETTINGS.akloShowModeHint": "Configura cómo se muestran textos en Aklo tanto en el chat como en el diario",
     "LIBRARY.SETTINGS.akloShowModeRunes": "Runas",
     "LIBRARY.SETTINGS.akloShowModeText": "Texto",
+    "LIBRARY.SETTINGS.skillValueForLanguages": "Valor de habilidad de idioma",
+    "LIBRARY.SETTINGS.skillValueForLanguagesHint": "Configura el valor mínimo en una habilidad de idiomas para poder entender un texto en ese lenguaje",
     "LIBRARY.SETTINGS.mythosValueForAklo": "Valor de Mitos para el Aklo",
     "LIBRARY.SETTINGS.mythosValueForAkloHint": "Configura el valor mínimo en Mitos de Cthulhu que debe tener un personaje para comprender textos escritos en Aklo"
 }
