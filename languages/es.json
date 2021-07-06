@@ -1,0 +1,30 @@
+{
+    "LIBRARY.STANDARD.TranslatedFrom": "Traducido del",
+    "LIBRARY.STANDARD.SeeOriginal": "(Ver original)",
+    "LIBRARY.STANDARD.OriginalTextIn": "Texto original en",
+    "LIBRARY.STANDARD.SeeTranslation": "(Ver traducción)",
+    "LIBRARY.STANDARD.UnknownLanguage": "No conoce el idioma en el que se está hablando",
+
+    "LIBRARY.LANGUAGES.Aklo": "Aklo",
+    "LIBRARY.LANGUAGES.Arabic": "Árabe",
+    "LIBRARY.LANGUAGES.Chinese": "Chino",
+    "LIBRARY.LANGUAGES.French": "Francés",
+    "LIBRARY.LANGUAGES.English": "Inglés",
+    "LIBRARY.LANGUAGES.German": "Alemán",
+    "LIBRARY.LANGUAGES.Greek": "Griego",
+    "LIBRARY.LANGUAGES.Hindi": "Hindi",
+    "LIBRARY.LANGUAGES.Italian": "Italiano",
+    "LIBRARY.LANGUAGES.Latin": "Latín",
+    "LIBRARY.LANGUAGES.Portuguese": "Portugués",
+    "LIBRARY.LANGUAGES.Russian": "Ruso",
+    "LIBRARY.LANGUAGES.Serbian": "Serbio",
+    "LIBRARY.LANGUAGES.Spanish": "Español",
+    "LIBRARY.LANGUAGES.Turkish": "Turco",
+
+    "LIBRARY.SETTINGS.akloShowMode": "Modo demostración Aklo",
+    "LIBRARY.SETTINGS.akloShowModeHint": "Configura cómo se muestran textos en Aklo tnato en el chat como en el diario",
+    "LIBRARY.SETTINGS.akloShowModeRunes": "Runas",
+    "LIBRARY.SETTINGS.akloShowModeText": "Texto",
+    "LIBRARY.SETTINGS.mythosValueToAklo": "Valor de Mitos para el Aklo",
+    "LIBRARY.SETTINGS.mythosValueToAkloHint": "Configura el valor mínimo en Mitos de Cthulhu que debe tener un personaje para comprender textos escritos en Aklo"
+}
