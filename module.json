@@ -31,7 +31,7 @@
         {
             "lang": "sv",
             "name": "Svenska",
-            "path": "lang/sv.json"
+            "path": "languages/sv.json"
         }
     ],
     "system": "CoC7",
