@@ -1,0 +1,33 @@
+{
+    "LIBRARY.STANDARD.TranslatedFrom": "Översatt från",
+    "LIBRARY.STANDARD.SeeOriginal": "(Se original)",
+    "LIBRARY.STANDARD.OriginalTextIn": "Originaltext i",
+    "LIBRARY.STANDARD.SeeTranslation": "(Se översättning)",
+    "LIBRARY.STANDARD.UnknownLanguage": "Du vet inte vilket språk detta uttrycks på.",
+
+    "LIBRARY.LANGUAGES.Aklo": "Aklo",
+    "LIBRARY.LANGUAGES.Arabic": "Arabic",
+    "LIBRARY.LANGUAGES.Chinese": "Chinese",
+    "LIBRARY.LANGUAGES.French": "French",
+    "LIBRARY.LANGUAGES.English": "English",
+    "LIBRARY.LANGUAGES.German": "German",
+    "LIBRARY.LANGUAGES.Greek": "Greek",
+    "LIBRARY.LANGUAGES.Hindi": "Hindi",
+    "LIBRARY.LANGUAGES.Italian": "Italian",
+    "LIBRARY.LANGUAGES.Latin": "Latin",
+    "LIBRARY.LANGUAGES.Portuguese": "Portuguese",
+    "LIBRARY.LANGUAGES.Russian": "Russian",
+    "LIBRARY.LANGUAGES.Serbian": "Serbian",
+    "LIBRARY.LANGUAGES.Spanish": "Spanish",
+    "LIBRARY.LANGUAGES.Swedish": "Swedish",
+    "LIBRARY.LANGUAGES.Turkish": "Turkish",
+
+    "LIBRARY.SETTINGS.akloShowMode": "Aklo-visningsläge",
+    "LIBRARY.SETTINGS.akloShowModeHint": "Ställer in hur Aklo-texter ska visas i chatt- och journalposter: runor eller text. ",
+    "LIBRARY.SETTINGS.akloShowModeRunes": "Runor",
+    "LIBRARY.SETTINGS.akloShowModeText": "Text",
+    "LIBRARY.SETTINGS.skillValueForLanguages": "Språkfärdighetsvärde",
+    "LIBRARY.SETTINGS.skillValueForLanguagesHint": "Ställer in minsta språkfärdighet för att kunna förstå en text.",
+    "LIBRARY.SETTINGS.mythosValueForAklo": "Mythos-värde för Aklo",
+    "LIBRARY.SETTINGS.mythosValueForAkloHint": "Ställer in minsta Mythosnivå en karaktär behöver för att kunna förstå texter skriva i Aklo."
+}

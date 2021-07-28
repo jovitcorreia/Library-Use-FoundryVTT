@@ -12,6 +12,7 @@ import portuguese from '../dictionaries/portuguese.js';
 import russian from '../dictionaries/russian.js';
 import serbian from '../dictionaries/serbian.js';
 import spanish from '../dictionaries/spanish.js';
+import swedish from '../dictionaries/swedish.js';
 import turkish from '../dictionaries/turkish.js';
 
 export class Library {
@@ -31,6 +32,7 @@ export class Library {
       'russian': game.i18n.localize('LIBRARY.LANGUAGES.Russian'),
       'serbian': game.i18n.localize('LIBRARY.LANGUAGES.Serbian'),
       'spanish': game.i18n.localize('LIBRARY.LANGUAGES.Spanish'),
+      'swedish': game.i18n.localize('LIBRARY.LANGUAGES.Swedish'),
       'turkish': game.i18n.localize('LIBRARY.LANGUAGES.Turkish'),
     };
   }
@@ -89,6 +91,9 @@ export class Library {
         break;
       case 'spanish':
         dictionary = spanish;
+        break;
+      case 'swedish':
+        dictionary = swedish;
         break;
       case 'turkish':
         dictionary = turkish;
