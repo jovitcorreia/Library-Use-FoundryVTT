@@ -3,7 +3,7 @@
     "title": "Library Use",
     "description": "Scrambles texts to languages of our world on chat and journal entries on the Call of Cthulhu system.",
     "author": "Castanho",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "minimumCoreVersion": "0.8.8",
     "compatibleCoreVersion": "0.8.8",
     "esmodules": [
@@ -27,6 +27,11 @@
             "lang": "pt-BR",
             "name": "Português (Brasil)",
             "path": "languages/pt-BR.json"
+        },
+        {
+            "lang": "sv",
+            "name": "Svenska",
+            "path": "lang/sv.json"
         }
     ],
     "system": "CoC7",

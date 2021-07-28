@@ -28,6 +28,7 @@ This module is not intended (and could not) be a Google Translate. All text conv
 - Russian;
 - Serbian;
 - Spanish;
+- Swedish;
 - Turkish.
 
 ## Installation.
