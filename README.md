@@ -32,14 +32,22 @@ This module is not intended (and could not) be a Google Translate. All text conv
 - Turkish.
 
 ## Installation.
-Please note: this module is currently only available for the Call of Cthulhu system.
+Please note: this module is currently only available for the Call of Cthulhu system. It currently supports English, Portuguese, Spanish and Swedish.
 
 In the setup screen, use the following manifest to install the module: `https://github.com/castanhocorreia/Library-Use-FoundryVTT/releases/latest/download/module.json`.
 
+You can also search for 'Library Use' on the Add-on Modules tab under setup page.
+
 ## Credits.
-- To all developers of [Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot). Without their efforts this module would not have existed.
-- To [SMenigat](https://github.com/SMenigat), and their incredible [thousand-most-common-words](https://github.com/SMenigat/thousand-most-common-words).
-- To Stacey, from [The Vaults of McTavish](https://thevaultsofmctavish.com/), who kindly relented their amazing Cthulhu Font to be used in the module.
+To all developers of [Polyglot](https://github.com/League-of-Foundry-Developers/fvtt-module-polyglot). Without their efforts this module would not have existed.
+
+To [SMenigat](https://github.com/SMenigat), and their incredible [thousand-most-common-words](https://github.com/SMenigat/thousand-most-common-words).
+
+To Stacey, from [The Vaults of McTavish](https://thevaultsofmctavish.com/), who kindly relented their amazing Cthulhu Font to be used in the module.
+
+To translators, who make this module accessible to more people.
+- Spanish: [lozalojo](https://github.com/lozalojo);
+- Swedish: [xdy](https://github.com/xdy).
 
 ## License.
 This module is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
