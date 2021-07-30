@@ -1,0 +1,21 @@
+{
+  "name": "library-use",
+  "version": "1.0.6",
+  "description": "Scrambles texts to languages of our world on chat and journal entries on the Call of Cthulhu system.",
+  "main": "library-use.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castanhocorreia/Library-Use-FoundryVTT.git"
+  },
+  "keywords": [],
+  "author": "Castanho",
+  "license": "Creative Commons Attribution 4.0 International License",
+  "bugs": {
+    "url": "https://github.com/castanhocorreia/Library-Use-FoundryVTT/issues"
+  },
+  "homepage": "https://github.com/castanhocorreia/Library-Use-FoundryVTT#readme",
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

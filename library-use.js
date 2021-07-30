@@ -48,26 +48,17 @@ function registerSettings() {
   });
 }
 function updateCharacterSkills(item) {
-  if (item.data.type !== 'skill') return;
+  if (item.data.type != 'skill') return;
   Object.entries(library.supportedLanguages).forEach(([standard, localized]) => {
     if (item.name == localized) Hooks.on('updateActor', () => use.updateActorsLanguages());
   });
 }
-Hooks.on('ready', () => {
-  library.activateLanguageFlags();
-});
-Hooks.on('renderChatLog', (log, html) => {
-  use.renderChatBar(html);
-  registerSettings();
-});
-Hooks.on('renderJournalSheet', (document, html) => {
-  use.renderJournalSheet(document, html);
-});
-Hooks.on('preCreateChatMessage', (document) => {
-  use.prepareMessage(document);
-});
-Hooks.on('renderChatMessage', (message, html, data) => {
-  use.showMessageOnChat(message, html);
-});
+Hooks.once('init', () => registerSettings());
+Hooks.on('ready', () => use.updateActorsLanguages());
+Hooks.on('renderChatLog', (log, html) => use.renderChatBar(html));
+Hooks.on('renderJournalSheet', (document, html) => use.renderJournalSheet(document, html));
+Hooks.on('preCreateChatMessage', (document) => use.prepareMessage(document));
+Hooks.on('renderChatMessage', (message, html, data) => use.showMessageOnChat(message, html));
+Hooks.on('chatBubble', (token, html, message) => use.showMessageBubble(html, message));
 Hooks.on('updateItem', (item) => updateCharacterSkills(item));
 Hooks.on('deleteItem', (item) => updateCharacterSkills(item));

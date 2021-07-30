@@ -43,7 +43,7 @@ export class Library {
     this.characterList.forEach((character) => {
       const knownLanguages = [];
       for (let i = 0; i < Object.keys(this.supportedLanguages).length; i++) {
-        if (character.getSkillsByName(Object.values(this.supportedLanguages)[i]).length !== 0) {
+        if (character.getSkillsByName(Object.values(this.supportedLanguages)[i]).length != 0) {
           knownLanguages.push(Object.keys(this.supportedLanguages)[i]);
         }
       }

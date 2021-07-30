@@ -11,6 +11,8 @@
     },
     "rules": {
       "max-len": ["error", {"code": 150}],
-      "require-jsdoc" : "off"
+      "require-jsdoc" : "off",
+      "space-infix-ops": "error",
+      "space-in-parens": ["error", "never"]
     }
 }

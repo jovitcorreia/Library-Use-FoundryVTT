@@ -72,7 +72,7 @@ export class Use {
     }
   }
   async convertMessage(document) {
-    if (document.data.type !== 2) return;
+    if (document.data.type != 2) return;
     if (document.getFlag('library-use', 'scrambled')) return document.getFlag('library-use', 'scramble');
     const language = document.getFlag('library-use', 'language') || null;
     if (!language) return;
@@ -102,6 +102,21 @@ export class Use {
       }
     });
     await this.switchTranslationMode(content, label, original, scramble, language);
+  }
+  async showMessageBubble(html, message) {
+    const content = game.messages.contents.slice(-10).reverse().find((c) => c.data.content == message);
+    const language = await library.localizeLanguage(content.data.flags['library-use']?.language);
+    if (language) {
+      game.users.forEach(async (user) => {
+        if (user.isGM || !user.character) return;
+        if (game.user.id == user.id) {
+          const knownLanguage = await this.checkKnowledge(user.character, language);
+          const hasEnoughMythos = await this.checkKnowledge(user.character, 'mythos');
+          if (language == game.i18n.localize('LIBRARY.LANGUAGES.Aklo') && hasEnoughMythos || knownLanguage) return;
+          else return html[0].innerText = content.data.flags['library-use']?.scramble;
+        }
+      });
+    }
   }
   async createTranslatableMessage(content, label, original, language) {
     for (let i = 1; i < $(content).contents().get().length; i++) {
@@ -153,12 +168,12 @@ export class Use {
     let hasKnowledge = false;
     if (knowledge == 'mythos') {
       const cthulhuMythosSkill = character.getSkillsByName(game.i18n.localize('CoC7.CthulhuMythosName'));
-      if (cthulhuMythosSkill.length !== 0 && cthulhuMythosSkill[0].value >= game.settings.get('library-use', 'mythosValueForAklo')) {
+      if (cthulhuMythosSkill.length != 0 && cthulhuMythosSkill[0].value >= game.settings.get('library-use', 'mythosValueForAklo')) {
         hasKnowledge = true;
       }
     } else {
       const languageSkill = character.getSkillsByName(knowledge);
-      if (languageSkill.length !== 0) {
+      if (languageSkill.length != 0) {
         if (languageSkill[0].value >= game.settings.get('library-use', 'skillValueForLanguages')) hasKnowledge = true;
       }
     }
@@ -201,7 +216,7 @@ export class Use {
           },
         });
       });
-    } else if (game.user.isOwner && game.user.character !== undefined) {
+    } else if (game.user.isOwner && game.user.character != undefined) {
       Object.values(game.user.character.data.flags['library-use'].languages).forEach((language) => {
         Object.entries(library.supportedLanguages).forEach(([standard, localized]) => {
           if (language == standard) {
