@@ -29,7 +29,7 @@ function registerSettings() {
       max: 99,
       step: 1,
     },
-    default: 50,
+    default: 1,
     onChange: () => location.reload(),
   });
   game.settings.register('library-use', 'mythosValueForAklo', {
@@ -43,7 +43,7 @@ function registerSettings() {
       max: 99,
       step: 1,
     },
-    default: 50,
+    default: 1,
     onChange: () => location.reload(),
   });
 }
